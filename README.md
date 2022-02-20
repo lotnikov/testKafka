@@ -9,7 +9,7 @@ Messages are written every second, but every 10-th message has broken JSON forma
 * sends it to configured error topic of the same kafka server.
 
 ## Dependencies
-* pyhon version 3.9 or later
+* python version 3.9 or later
 * kafka-python PyPi package 
 
 ## Things to add
