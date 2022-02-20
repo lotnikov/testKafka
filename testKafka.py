@@ -1,6 +1,7 @@
 import threading, time, logging, json, configparser
 from kafka import KafkaProducer, KafkaConsumer
 
+# producer thread
 def do_send():
     logging.info("Producer thread started")
     producer = KafkaProducer(bootstrap_servers=[kafka_url])
@@ -21,8 +22,9 @@ def do_send():
 
         producer.send(topic_main, value=bytes(msg_text,'ascii'))
         producer.flush()
-        time.sleep(1)
+        time.sleep(1) # one second delay
 
+# consumer thread
 def do_receive():
     consumer = KafkaConsumer(topic_main, bootstrap_servers=[kafka_url])
     logging.info("Consumer thread started")
@@ -42,6 +44,7 @@ def do_receive():
             errthread = threading.Thread(target=do_log_error, name='thread_log_error', args=(err,))
             errthread.start()
 
+#logging thread
 def do_log_error(err):
 
     # write to logs
