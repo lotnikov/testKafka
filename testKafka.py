@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     #read config
     config = configparser.ConfigParser()
-    config.read('./tz.ini')
+    config.read('./testKafka.ini')
     topic_main = config['DEFAULT']['topic_main']
     topic_err = config['DEFAULT']['topic_err']
     timeout = int(config['DEFAULT']['timeout'])
