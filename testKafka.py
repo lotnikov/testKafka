@@ -59,7 +59,7 @@ def do_log_error(err):
     # ...
 
 if __name__ == '__main__':
-    logging.basicConfig(filename="/home/kafka/tz.log", level=logging.INFO)
+    logging.basicConfig(filename="testKafka.log", level=logging.INFO)
 
     #read config
     config = configparser.ConfigParser()

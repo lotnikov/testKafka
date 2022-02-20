@@ -1,0 +1,99 @@
+INFO:root:Producer thread started
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+WARNING:kafka.coordinator.consumer:group_id is None: disabling auto-commit.
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('topic-main',)
+INFO:root:Consumer thread started
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='topic-main', partition=0)]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3766, timestamp=1645364027724, timestamp_type=0, key=None, value=b'{\n    "n": 1,\n    "message": "Message 1"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3767, timestamp=1645364033789, timestamp_type=0, key=None, value=b'{\n    "n": 2,\n    "message": "Message 2"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3768, timestamp=1645364034792, timestamp_type=0, key=None, value=b'{\n    "n": 3,\n    "message": "Message 3"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3769, timestamp=1645364035802, timestamp_type=0, key=None, value=b'{\n    "n": 4,\n    "message": "Message 4"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3770, timestamp=1645364036809, timestamp_type=0, key=None, value=b'{\n    "n": 5,\n    "message": "Message 5"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3771, timestamp=1645364037816, timestamp_type=0, key=None, value=b'{\n    "n": 6,\n    "message": "Message 6"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3772, timestamp=1645364038821, timestamp_type=0, key=None, value=b'{\n    "n": 7,\n    "message": "Message 7"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3773, timestamp=1645364039826, timestamp_type=0, key=None, value=b'{\n    "n": 8,\n    "message": "Message 8"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3774, timestamp=1645364040833, timestamp_type=0, key=None, value=b'{\n    "n": 9,\n    "message": "Message 9"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=42, serialized_header_size=-1)
+ERROR:root:topic: topic-main partition: 0 offset: 3775 key: None value: b'{\n    "n": 10,\n    "message": "Message 10"\n}{'
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connected> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Closing connection. 
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3776, timestamp=1645364042850, timestamp_type=0, key=None, value=b'{\n    "n": 11,\n    "message": "Message 11"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3777, timestamp=1645364043859, timestamp_type=0, key=None, value=b'{\n    "n": 12,\n    "message": "Message 12"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3778, timestamp=1645364044865, timestamp_type=0, key=None, value=b'{\n    "n": 13,\n    "message": "Message 13"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3779, timestamp=1645364045870, timestamp_type=0, key=None, value=b'{\n    "n": 14,\n    "message": "Message 14"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3780, timestamp=1645364046875, timestamp_type=0, key=None, value=b'{\n    "n": 15,\n    "message": "Message 15"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3781, timestamp=1645364047880, timestamp_type=0, key=None, value=b'{\n    "n": 16,\n    "message": "Message 16"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3782, timestamp=1645364048884, timestamp_type=0, key=None, value=b'{\n    "n": 17,\n    "message": "Message 17"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3783, timestamp=1645364049889, timestamp_type=0, key=None, value=b'{\n    "n": 18,\n    "message": "Message 18"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3784, timestamp=1645364050892, timestamp_type=0, key=None, value=b'{\n    "n": 19,\n    "message": "Message 19"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+ERROR:root:topic: topic-main partition: 0 offset: 3785 key: None value: b'{\n    "n": 20,\n    "message": "Message 20"\n}{'
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connected> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Closing connection. 
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3786, timestamp=1645364052903, timestamp_type=0, key=None, value=b'{\n    "n": 21,\n    "message": "Message 21"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3787, timestamp=1645364053908, timestamp_type=0, key=None, value=b'{\n    "n": 22,\n    "message": "Message 22"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3788, timestamp=1645364054911, timestamp_type=0, key=None, value=b'{\n    "n": 23,\n    "message": "Message 23"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3789, timestamp=1645364055915, timestamp_type=0, key=None, value=b'{\n    "n": 24,\n    "message": "Message 24"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3790, timestamp=1645364056921, timestamp_type=0, key=None, value=b'{\n    "n": 25,\n    "message": "Message 25"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3791, timestamp=1645364057928, timestamp_type=0, key=None, value=b'{\n    "n": 26,\n    "message": "Message 26"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3792, timestamp=1645364058936, timestamp_type=0, key=None, value=b'{\n    "n": 27,\n    "message": "Message 27"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3793, timestamp=1645364059940, timestamp_type=0, key=None, value=b'{\n    "n": 28,\n    "message": "Message 28"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3794, timestamp=1645364060947, timestamp_type=0, key=None, value=b'{\n    "n": 29,\n    "message": "Message 29"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+ERROR:root:topic: topic-main partition: 0 offset: 3795 key: None value: b'{\n    "n": 30,\n    "message": "Message 30"\n}{'
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connected> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Closing connection. 
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3796, timestamp=1645364062960, timestamp_type=0, key=None, value=b'{\n    "n": 31,\n    "message": "Message 31"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3797, timestamp=1645364063965, timestamp_type=0, key=None, value=b'{\n    "n": 32,\n    "message": "Message 32"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3798, timestamp=1645364064969, timestamp_type=0, key=None, value=b'{\n    "n": 33,\n    "message": "Message 33"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3799, timestamp=1645364065973, timestamp_type=0, key=None, value=b'{\n    "n": 34,\n    "message": "Message 34"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3800, timestamp=1645364066978, timestamp_type=0, key=None, value=b'{\n    "n": 35,\n    "message": "Message 35"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3801, timestamp=1645364067984, timestamp_type=0, key=None, value=b'{\n    "n": 36,\n    "message": "Message 36"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3802, timestamp=1645364068991, timestamp_type=0, key=None, value=b'{\n    "n": 37,\n    "message": "Message 37"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3803, timestamp=1645364069996, timestamp_type=0, key=None, value=b'{\n    "n": 38,\n    "message": "Message 38"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3804, timestamp=1645364071007, timestamp_type=0, key=None, value=b'{\n    "n": 39,\n    "message": "Message 39"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+ERROR:root:topic: topic-main partition: 0 offset: 3805 key: None value: b'{\n    "n": 40,\n    "message": "Message 40"\n}{'
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: connecting to rhel:9092 [('fe80::c5e3:fe1f:c696:318', 9092, 0, 2) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connecting> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=0 host=rhel:9092 <connected> [IPv6 ('fe80::c5e3:fe1f:c696:318', 9092, 0, 2)]>: Closing connection. 
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3806, timestamp=1645364073016, timestamp_type=0, key=None, value=b'{\n    "n": 41,\n    "message": "Message 41"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
+INFO:root:ConsumerRecord(topic='topic-main', partition=0, offset=3807, timestamp=1645364074028, timestamp_type=0, key=None, value=b'{\n    "n": 42,\n    "message": "Message 42"\n}', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=44, serialized_header_size=-1)
