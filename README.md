@@ -8,6 +8,10 @@ Messages are written every second, but every 10-th message has broken JSON forma
 * puts the message into logfile 
 * sends it to configured error topic of the same kafka server.
 
+## Dependencies
+* pyhon version 3.9 or later
+* kafka-python PyPi package 
+
 ## Things to add
 * push to Prometheus (logging thread)
 * application daemonize (to be configured using systemd as a standard linux daemon, with start/stop/status commands support)
